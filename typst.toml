@@ -1,0 +1,17 @@
+[package]
+name = "szu-slides"
+version = "0.1.0"
+entrypoint = "main.typ"
+authors = ["Degurechaff57 <tusmorikawa99@gmail.com>"]
+license = "MIT"
+description = "A clean and modern Typst slides template for Shenzhen University (SZU), powered by Touying."
+homepage = "https://github.com/Degurechaff57/szu-typst-slides"
+repository = "https://github.com/Degurechaff57/szu-typst-slides"
+categories = ["presentation"]
+disciplines = ["computer-science", "engineering"]
+keywords = ["slides", "szu", "shenzhen-university", "touying", "presentation"]
+
+[template]
+path = "."
+entrypoint = "main_zh.typ"
+thumbnail = "thumbnail.png"
