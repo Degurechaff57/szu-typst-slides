@@ -55,4 +55,4 @@ Temporary Items
 .ionide
 
 # Custom rules
-*.pdf
+*.pdf.typst_packages
