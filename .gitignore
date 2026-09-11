@@ -56,3 +56,4 @@ Temporary Items
 
 # Custom rules
 *.pdf.typst_packages
+!assets/SZU_flag.pdf
