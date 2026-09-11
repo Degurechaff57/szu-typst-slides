@@ -4,9 +4,9 @@
   <a href="README.md">English</a> | <strong>中文</strong>
 </p>
 
-[![Typst](https://img.shields.io/badge/Typst-0.14%2B-blue)](https://typst.app/)
-[![Touying](https://img.shields.io/badge/Touying-0.6.1-orange)](https://touying-typ.github.io/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Typst 适用版本: 0.14+](https://img.shields.io/badge/Typst-0.14%2B-blue)](https://typst.app/)
+[![Touying 适用版本: 0.7.4](https://img.shields.io/badge/Touying-0.7.4-orange)](https://touying-typ.github.io/)
+[![开源协议: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 一个优雅、现代且专业的深圳大学（SZU）[Typst](https://typst.app/) 幻灯片与毕业答辩报告模板，基于 [Touying](https://touying-typ.github.io/) 框架构建。
 
@@ -24,7 +24,7 @@
 - **双主题随心切换**：支持 Metropolis 扁平极简风与 University 经典学术风一键切换。
 - **纯正中英双语划分**：提供完全独立的中文模板（`main_zh.typ`）与英文模板（`main_en.typ`），封面标签、大纲、致谢与正文各自规范纯正。
 - **丰富可复用组件**：内置卡片、指标展示、结论高亮块、标签行、规范表格、带编号大纲项等。
-- **现代化 Typst 生态**：全面支持 Typst 0.14+ 与 Touying 0.6.1。
+- **现代化 Typst 生态**：全面支持 Typst 0.14+ 与 Touying 0.7.4。
 
 ---
 
@@ -57,8 +57,8 @@ cd szu-typst-slides
 
 ### 3. 选择语言并修改个人信息
 
-- **中文幻灯片**：编辑 [section-cover_zh.typ](section-cover_zh.typ)，修改论文标题、答辩人、导师、学院、专业等。
-- **英文幻灯片**：编辑 [section-cover_en.typ](section-cover_en.typ)，填写对应英文信息。
+- **中文幻灯片**：编辑 `section-cover_zh.typ`，修改论文标题、答辩人、导师、学院、专业等。
+- **英文幻灯片**：编辑 `section-cover_en.typ`，填写对应英文信息。
 
 ### 4. 编译导出 PDF
 
@@ -103,7 +103,7 @@ typst watch main_en.typ
 
 本项目采用统一的中英文划分命名规范（`xxx_en.*` 和 `xxx_zh.*`）：
 
-```
+```text
 szu-typst-slides/
 ├── README.md                 # 英文说明文档（默认入口）
 ├── README_zh.md              # 中文说明文档
@@ -177,10 +177,10 @@ szu-typst-slides/
 | 依赖项 | 推荐版本 | 用途 |
 |--------|----------|------|
 | **Typst** | `0.14+`（已在 `0.14.2` 测试） | 编译工具链与 CLI |
-| `@preview/touying` | `0.6.1` | 幻灯片宏包框架 |
-| `@preview/theorion` | `0.3.3` | 定理环境与数学公式支持 |
+| `@preview/touying` | `0.7.4` | 幻灯片宏包框架 |
+| `@preview/theorion` | `0.4.0` | 定理环境与数学公式支持 |
 | `@preview/numbly` | `0.1.0` | 多级标题编号格式化 |
-| `@preview/cuti` | `0.3.0` | 中文伪粗体模拟 |
+| `@preview/cuti` | `0.4.0` | 中文伪粗体模拟 |
 
 > 首次编译时，Typst 会自动从官方 `@preview` 仓库拉取并缓存所需宏包。
 
@@ -191,7 +191,7 @@ szu-typst-slides/
 - **中文字体**：`Heiti SC`（macOS 系统黑体）
 - **英文字体**：`Times New Roman`
 
-如在 Windows 或 Linux 环境下使用，请打开 [slide-text.typ](slide-text.typ) 将 `zh-font` 改为系统已安装的中文字体：
+如在 Windows 或 Linux 环境下使用，请打开 `slide-text.typ` 将 `zh-font` 改为系统已安装的中文字体：
 ```typst
 #let zh-font = "SimHei"       // 例如 Windows 环境可使用黑体
 #let en-font = "Times New Roman"

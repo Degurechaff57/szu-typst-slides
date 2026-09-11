@@ -5,7 +5,6 @@ entrypoint = "lib.typ"
 authors = ["Degurechaff57 <tusmorikawa99@gmail.com>"]
 license = "MIT"
 description = "Shenzhen University presentation slides powered by Touying."
-homepage = "https://github.com/Degurechaff57/szu-typst-slides"
 repository = "https://github.com/Degurechaff57/szu-typst-slides"
 categories = ["presentation"]
 disciplines = ["computer-science", "engineering"]
